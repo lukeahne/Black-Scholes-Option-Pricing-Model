@@ -9,6 +9,7 @@ This project implements the Black-Scholes pricing model from scratch in Java. Th
 It also calculates **Delta, Gamma, Vega, Theta, and Rho**, implements standard normal PDF/CDF functions, and includes put-call parity verification and an interactive command-line interface.
 
 Running the Program:
+
 Compile:
 javac BlackScholesModel.java
 
