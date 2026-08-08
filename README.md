@@ -46,3 +46,10 @@ T = 1 year
 r = 5%
 σ = 20%
 
+## Running the Program
+
+Compile:
+javac BlackScholesModel.java
+
+Run:
+java BlackScholesModel
