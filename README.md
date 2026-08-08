@@ -8,6 +8,14 @@ This project implements the Black-Scholes pricing model from scratch in Java. Th
 
 It also calculates **Delta, Gamma, Vega, Theta, and Rho**, implements standard normal PDF/CDF functions, and includes put-call parity verification and an interactive command-line interface.
 
+Running the Program:
+Compile:
+javac BlackScholesModel.java
+
+Run:
+java BlackScholesModel
+
+
 ## Features
 
 - European call and put option pricing
@@ -45,11 +53,3 @@ K = $100
 T = 1 year
 r = 5%
 σ = 20%
-
-## Running the Program
-
-Compile:
-javac BlackScholesModel.java
-
-Run:
-java BlackScholesModel
