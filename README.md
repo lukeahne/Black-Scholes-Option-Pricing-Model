@@ -1,18 +1,48 @@
-Black-Scholes Option Pricing Engine
+# Black-Scholes Option Pricing Model & Greeks
 
-Overview:
-A Java implementation of the Black-Scholes model for European option valuation.
+A Java implementation of the Black-Scholes model for pricing European call and put options and calculating the primary option Greeks.
 
-Features:
-- European call and put pricing
-- Delta, Gamma, Vega, Theta, and Rho calculations
+## Overview
+
+This project implements the Black-Scholes pricing model from scratch in Java. The model calculates theoretical option prices using the underlying asset price, strike price, time to expiration, risk-free rate, and volatility.
+
+It also calculates **Delta, Gamma, Vega, Theta, and Rho**, implements standard normal PDF/CDF functions, and includes put-call parity verification and an interactive command-line interface.
+
+## Features
+
+- European call and put option pricing
+- Black-Scholes `d1` and `d2` calculations
+- Delta, Gamma, Vega, Theta, and Rho
+- Standard normal PDF and CDF implementation
 - Put-call parity verification
-- Interactive command-line interface
+- Input validation
+- Predefined pricing examples
+- Interactive user input for custom scenarios
 
-Mathematical Concepts:
-- Risk-neutral pricing
-- Standard normal distribution approximation
-- Option sensitivities
+## Model Inputs
 
-Technologies:
-Java
+| Input | Description |
+|---|---|
+| `S` | Underlying asset price |
+| `K` | Strike price |
+| `T` | Time to expiration |
+| `r` | Risk-free interest rate |
+| `σ` | Annualized volatility |
+
+## Example
+
+The program includes predefined examples for:
+
+- At-the-money European call and put options
+- In-the-money European call options
+- Interactive pricing using user-specified inputs
+
+Example parameters:
+
+```text
+S = $100
+K = $100
+T = 1 year
+r = 5%
+σ = 20%
+
