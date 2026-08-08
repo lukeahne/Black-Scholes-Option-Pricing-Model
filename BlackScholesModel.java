@@ -93,7 +93,6 @@ public class BlackScholesModel {
         if (K <= 0)     throw new IllegalArgumentException("Strike price K must be > 0. Got: " + K);
         if (T <= 0)     throw new IllegalArgumentException("Time to expiration T must be > 0. Got: " + T);
         if (sigma <= 0) throw new IllegalArgumentException("Volatility sigma must be > 0. Got: " + sigma);
-        // r can be 0 or negative (e.g. Japanese rates)
     }
     private static String fmt(double val) {
         return String.format("%10.6f", val);
@@ -136,9 +135,13 @@ public class BlackScholesModel {
         System.out.println("Put-Call Parity satisfied: " + parity);
         System.out.println();
 
+    // Example 2: In the Money Call
+        
         System.out.println("Example 2: In-The-Money Call (S=$110, K=$100, T=3mo)\n");
         printOptionReport("CALL", 110.0, 100.0, 3.0 / 12.0, 0.05, 0.25);
 
+    // Examble 3: User input
+        
         System.out.println("Example 3: Interactive Input\n");
 
         Scanner sc = new Scanner(System.in);
@@ -154,7 +157,7 @@ public class BlackScholesModel {
             printOptionReport("CALL", iS, iK, iT, iR, iSigma);
             printOptionReport("PUT",  iS, iK, iT, iR, iSigma);
         } catch (InputMismatchException e) {
-            System.out.println("Invalid input — skipping interactive example.");
+            System.out.println("Invalid input: skipping interactive example.");
         }
     }
 }
