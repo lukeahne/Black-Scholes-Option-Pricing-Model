@@ -11,10 +11,14 @@ It also calculates **Delta, Gamma, Vega, Theta, and Rho**, implements standard n
 Running the Program:
 
 Compile:
+'''text
 javac BlackScholesModel.java
+'''
 
 Run:
+'''
 java BlackScholesModel
+'''
 
 
 ## Features
