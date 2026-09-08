@@ -8,47 +8,48 @@ This project implements the Black-Scholes pricing model from scratch in Java. Th
 
 It also calculates **Delta, Gamma, Vega, Theta, and Rho**, implements standard normal PDF/CDF functions, and includes put-call parity verification and an interactive command-line interface.
 
-Running the Program:
+## Running the Program
 
 Compile:
-'''text
+
+```bash
 javac BlackScholesModel.java
-'''
+```
 
 Run:
-'''
-java BlackScholesModel
-'''
 
+```bash
+java BlackScholesModel
+```
 
 ## Features
 
-- European call and put option pricing
-- Black-Scholes `d1` and `d2` calculations
-- Delta, Gamma, Vega, Theta, and Rho
-- Standard normal PDF and CDF implementation
-- Put-call parity verification
-- Input validation
-- Predefined pricing examples
-- Interactive user input for custom scenarios
+* European call and put option pricing
+* Black-Scholes `d1` and `d2` calculations
+* Delta, Gamma, Vega, Theta, and Rho
+* Standard normal PDF and CDF implementation
+* Put-call parity verification
+* Input validation
+* Predefined pricing examples
+* Interactive user input for custom scenarios
 
 ## Model Inputs
 
-| Input | Description |
-|---|---|
-| `S` | Underlying asset price |
-| `K` | Strike price |
-| `T` | Time to expiration |
-| `r` | Risk-free interest rate |
-| `σ` | Annualized volatility |
+| Input | Description             |
+| ----- | ----------------------- |
+| `S`   | Underlying asset price  |
+| `K`   | Strike price            |
+| `T`   | Time to expiration      |
+| `r`   | Risk-free interest rate |
+| `σ`   | Annualized volatility   |
 
 ## Example
 
 The program includes predefined examples for:
 
-- At-the-money European call and put options
-- In-the-money European call options
-- Interactive pricing using user-specified inputs
+* At-the-money European call and put options
+* In-the-money European call options
+* Interactive pricing using user-specified inputs
 
 Example parameters:
 
@@ -58,3 +59,4 @@ K = $100
 T = 1 year
 r = 5%
 σ = 20%
+```
